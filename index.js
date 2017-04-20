@@ -74,7 +74,7 @@ class ResourceWebpackPlugin {
                             outputSourceMap = inputSourceMap;
                         }
 
-                        compilation.assets[file] = new SourceMapSource(
+                        return compilation.assets[file] = new SourceMapSource(
                             newSourceCode,
                             file,
                             outputSourceMap,
@@ -83,7 +83,7 @@ class ResourceWebpackPlugin {
                         );
                     }
 
-                    compilation.assets[file] = new RawSource(newSourceCode);
+                    return compilation.assets[file] = new RawSource(newSourceCode);
                 });
 
                 callback();
