@@ -1,6 +1,6 @@
 {
   "name": "resource-webpack-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A webpack plugin for edit resource when building webpack.",
   "main": "index.js",
   "scripts": {

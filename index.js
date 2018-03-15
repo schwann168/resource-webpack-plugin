@@ -31,7 +31,6 @@ class ResourceWebpackPlugin {
                     }
 
                     const assets = compilation.assets[file];
-
                     let inputSourceMap,
                         sourceCode;
 
@@ -46,7 +45,6 @@ class ResourceWebpackPlugin {
                     }
 
                     const data = this.callback(sourceCode);
-
                     let newSourceCode = null,
                         newSourceMap = null,
                         outputSourceMap = null;
